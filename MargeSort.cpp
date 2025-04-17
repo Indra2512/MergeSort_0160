@@ -33,3 +33,11 @@ void input()
     }
 }
 
+// create function MargeSort
+void MargeSort(int low, int high)
+{
+    if (low >= high) // step 1
+    {
+        return; // step 1A
+    }
+}
