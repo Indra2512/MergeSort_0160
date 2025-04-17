@@ -58,7 +58,7 @@ void MargeSort(int low, int high)
     {
         if (arr [i] <= arr[j]) // step 4D.I
         {
-            B[K] = arr[i];
+            B[k] = arr[i];
             i++;
         }
         else
@@ -71,7 +71,7 @@ void MargeSort(int low, int high)
 
     while (j <= high) // step 4E
     {
-        B[K] = arr[j];  // step 4E.I
+        B[k] = arr[j];  // step 4E.I
         j++;            // step 4E.II
         k = k + 1;      // step 4E.III
     }
