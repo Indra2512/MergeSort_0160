@@ -43,4 +43,10 @@ void MargeSort(int low, int high)
     }
 
     int mid = (low + high) / 2; // step 2
+
+    //step 3
+    // fungsi rekursi - memanggil diri sendiri 
+    MargeSort(low, mid);    //step 3A
+    MargeSort(mid + 1, high); // step 3B
+    
 }
