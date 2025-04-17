@@ -48,5 +48,40 @@ void MargeSort(int low, int high)
     // fungsi rekursi - memanggil diri sendiri 
     MargeSort(low, mid);    //step 3A
     MargeSort(mid + 1, high); // step 3B
+
+    //step 4
+    int i = low;    //step 4A
+    int j = mid + 1; // step 4B
+    int k = low;    // step 4C
+
+    while (i <= mid && j <= high) // step 4D
+    {
+        if (arr [i] <= arr[j]) // step 4D.I
+        {
+            B[K] = arr[i];
+            i++;
+        }
+        else
+        {
+            B[k] = arr[j];
+            j++;
+        }
+        k++; // step 4D.II
+    }
+
+    while (j <= high) // step 4E
+    {
+        B[K] = arr[j];  // step 4E.I
+        j++;            // step 4E.II
+        k = k + 1;      // step 4E.III
+    }
+
+    while (i <= mid)    // step 4F
+    {
+        B[k] = arr[i];  // step 4F.I
+        i++;            // step 4F.II
+        k++;            // step 4F.III
+    }
+
     
 }
